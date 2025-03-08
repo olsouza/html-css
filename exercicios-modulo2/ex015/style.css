@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+body{
+    background-image: linear-gradient(to right, #327AA7, #3C7798);
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 10px;
+}
+
+h1{
+    color: #E6E5DE;
+    background-color: #99AEBE;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px black;
+}
+
+h1#principal{
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 30px;
+    height: 40px;
+    width: 640px;
+    margin: auto;
+    box-shadow: 2px 2px 5px black;
+}
+
+h2{
+    color: #010F22;
+    text-align: center;
+    background-color: white;
+    border-radius: 30px;
+    width: 245px;
+    box-shadow: 2px 2px 5px #99AEBE;
+}
+
+.basico{
+   color: rgb(100, 100, 100);
+}
+
+.intermediario{
+   color: #3d3d3d;
+}
+
+.avançado{
+   color: #010F22;
+}
+
+.destaque{
+    background-color: #E6C51E;
+}
+
+p{
+    text-align: justify;
+    text-indent: 15px;
+}

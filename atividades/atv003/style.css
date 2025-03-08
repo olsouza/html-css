@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84E1AD;
+    margin: 0px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #3DDA84, #175032);
+    padding: 30px;
+    box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.461);
+    color: white;
+}
+
+header > h1{
+    margin-top: -20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+header > p{
+    margin-top: -5px;
+    text-align: center;
+    font-size: small;
+}
+
+nav{
+    text-align: center;
+}
+
+nav > a{
+    text-decoration: none;
+    color: white;
+    margin-right: 8px;
+}
+
+nav > a:hover{
+    background-color: #2E925E;
+    padding: 5px;
+    border-radius: 5px;
+    color: #175032;
+    transition: 0.8s;
+}
+
+main{
+    text-align: center;
+    background-color: white;
+    width: 900px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.482);
+}
+
+.video{
+    background-color: #013A19;
+    padding: 20px 50px;
+    margin: auto;
+}
+
+aside{
+    background-color: #7FE1A9;
+    width: 800px;
+    height: 500px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 8px;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.338);
+}
+
+span > h3{
+    text-align: justify;
+    color: white;
+    background-color: #155D30;
+    padding: 8px;
+    height: 30px;
+    width: 800px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.338);
+}
+
+aside > p{
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.lista1{
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+}
+
+.lista2{
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+}
+
+article > p{
+    text-align: justify;
+    text-indent: 30px;
+}
+
+footer{
+    background-color: #013A19;
+    text-align: center;
+    color: white;
+    padding: 1px;
+    margin: 0px;
+}
+
+footer > p{
+    margin: 0px;
+}
+
+.link{
+    background-image: linear-gradient(to left, #a3f8c9, #79E3AC);
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    padding: 3px;
+    margin: 4px;
+}
+
+a > img{
+    width: 1em;
+    margin: -2px;
+    text-align: right;
+    padding: 0px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu sou fofo?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #FFC0CB;
+        }
+        .container {
+            margin-top: 20vh;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #FF69B4;
+            text-shadow: 2px 2px 5px white;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+            border: none;
+            background-color: #FFB6C1;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+            position: absolute;
+        }
+        button:hover {
+            background-color: #FF69B4;
+        }
+        #yesBtn {
+            left: 45%;
+        }
+        #noBtn {
+            left: 55%;
+        }
+        #scary {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+        }
+        #scary img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="question">
+        <h1>Eu sou fofo? 🥺💖</h1>
+        <button id="yesBtn" onclick="nextQuestion(true)">Sim 💕</button>
+        <button id="noBtn" onclick="moveNoButton()">Não 😠</button>
+    </div>
+    <div id="scary">
+        <img src="https://getwallpapers.com/wallpaper/full/7/9/7/712067-full-size-scary-computer-backgrounds-3550x1997-samsung.jpg" alt="Imagem assustadora">
+        <audio id="scream" src="https://www.fesliyanstudios.com/play-mp3/4384" preload="auto"></audio>
+    </div>
+
+    <script>
+        let questions = ["Tem certeza? 🥺", "Absoluta? 😳", "Última chance de mudar de ideia... 😖", "Sério mesmo? 😨" ];
+        let index = 0;
+        let noBtn = document.getElementById("noBtn");
+        let questionTitle = document.querySelector("h1");
+
+        function moveNoButton() {
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            noBtn.style.left = `${x}px`;
+            noBtn.style.top = `${y}px`;
+        }
+
+        function nextQuestion(yes) {
+            if (yes && index < questions.length) {
+                questionTitle.innerText = questions[index];
+                index++;
+            } else if (yes && index >= questions.length) {
+                scareUser();
+            }
+        }
+
+        function scareUser() {
+            document.getElementById("question").style.display = "none";
+            document.getElementById("scary").style.display = "flex";
+            document.getElementById("scream").play();
+        }
+    </script>
+</body>
+</html>
