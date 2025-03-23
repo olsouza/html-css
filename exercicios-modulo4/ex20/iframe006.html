@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando conteúdos</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div#iframe{
+            position: relative;
+        }
+
+        div#container > iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 70%;
+            height: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Consteúdo dentro de iframes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias consequatur blanditiis asperiores est illo eum ullam ratione dolor temporibus unde? Excepturi velit eius sunt minus ea incidunt, asperiores nisi sit.</p>
+
+    <h2>vídeos</h2>
+
+    <div class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dMHuWzEy5iM?si=l3ED3X3Uw1mDhJmW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h2>Mapas do Google</h2>
+
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.230999154719!2d-38.230125426416215!3d-7.975061279501816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a710cdd838cbe7%3A0xae35d38d51efbd1e!2sIFSert%C3%A3oPE%20Campus%20Serra%20Talhada!5e0!3m2!1spt-BR!2sbr!4v1742755078036!5m2!1spt-BR!2sbr" width="560" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <h2>Mapas do waze</h2>
+
+    <div class="container">
+        <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-7.975067&lon=-38.227550&ct=livemap" width="560" height="450" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
